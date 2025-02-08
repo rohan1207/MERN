@@ -9,8 +9,7 @@ const AppContextProvider = (props) => {
   const [user, setUser] = useState(false);
   const [showLogin, setshowLogin] = useState(false);
 
-  const backendUrl =
-    import.meta.env.VITE_BACKEND_URL || "https://pictoria-backend.onrender.com"; 
+  const backendUrl ="https://pictoria-backend.onrender.com"; 
 
   const [token, settoken] = useState(localStorage.getItem("token"));
   const [credit, setCredit] = useState(false);
